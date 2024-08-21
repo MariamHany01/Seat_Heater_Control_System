@@ -90,19 +90,19 @@ All tasks operate concurrently and communicate as necessary to ensure proper fun
 Here are some screenshots of the system’s display:
 
 1. **Screen Display:**
-![](images/Screenshot2.png)
+![](images/screenshot2.png)
 
    *Description: Screenshot showing the current temperature, heating level, and heater status for both seats.*
 
 2. **Run Time Measurments Display:**
-![](images/Screenshot.png)
+![](images/screenshot.png)
    *Description: Screenshot of the display the run time measurmenets*
 
 ## Simso Diagram
 
 The Simso simulation diagram for the project is shown below:
 
-![](images/Screenshot3.png)
+![](images/screenshot3.png)
 *Description: Diagram illustrating the task scheduling and system operation as simulated in Simso.*
 
 ---
