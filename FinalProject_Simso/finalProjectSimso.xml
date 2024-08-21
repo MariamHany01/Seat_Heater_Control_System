@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<simulation cycles_per_ms="1000000" duration="3000000000" etm="wcet">
+	<sched class="simso.schedulers.FP" overhead="0" overhead_activate="0" overhead_terminate="0"/>
+	<caches memory_access_time="100"/>
+	<processors>
+		<processor cl_overhead="0" cs_overhead="0" id="1" name="CPU 1" speed="1.0"/>
+	</processors>
+	<tasks>
+		<field name="priority" type="int"/>
+		<task ACET="0.0" WCET="0.5" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="10.0" et_stddev="0.0" id="1" instructions="0" list_activation_dates="" mix="0.5" name="drv-btnPress" period="10.0" preemption_cost="0" priority="4" task_type="APeriodic"/>
+		<task ACET="0.0" WCET="0.5" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="10.0" et_stddev="0.0" id="2" instructions="0" list_activation_dates="" mix="0.5" name="pass_btnPress" period="10.0" preemption_cost="0" priority="4" task_type="APeriodic"/>
+		<task ACET="0.0" WCET="25.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="300.0" et_stddev="0.0" id="3" instructions="0" list_activation_dates="" mix="0.5" name="TempMonitor" period="300.0" preemption_cost="0" priority="2" task_type="Periodic"/>
+		<task ACET="0.0" WCET="25.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="500.0" et_stddev="0.0" id="4" instructions="0" list_activation_dates="" mix="0.5" name="drv-heatCont" period="500.0" preemption_cost="0" priority="3" task_type="Periodic"/>
+		<task ACET="0.0" WCET="25.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="500.0" et_stddev="0.0" id="5" instructions="0" list_activation_dates="" mix="0.5" name="pass-heatCont" period="500.0" preemption_cost="0" priority="3" task_type="Periodic"/>
+		<task ACET="0.0" WCET="500.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="3000.0" et_stddev="0.0" id="6" instructions="0" list_activation_dates="" mix="0.5" name="Display" period="3000.0" preemption_cost="0" priority="1" task_type="Periodic"/>
+		<task ACET="0.0" WCET="400.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="2000.0" et_stddev="0.0" id="8" instructions="0" list_activation_dates="" mix="0.5" name="Cpu-meas" period="2000.0" preemption_cost="0" priority="1" task_type="Periodic"/>
+		<task ACET="0.0" WCET="500.0" abort_on_miss="no" activationDate="0.0" base_cpi="1.0" deadline="1000.0" et_stddev="0.0" id="9" instructions="0" list_activation_dates="" mix="0.5" name="FailureLog" period="1500.0" preemption_cost="0" priority="2" task_type="Periodic"/>
+	</tasks>
+</simulation>
